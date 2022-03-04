@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Neo Sans Arabic Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neo Sans Arabic Regular"),
+    url("./assets/fonts/Neo Sans Arabic Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neo Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neo Sans"),
+    url("./assets/fonts/NeoSansArabic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neo Sans Arabic Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neo Sans Arabic Light"),
+    url("./assets/fonts/NeoSansArabicLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neo Sans Arabic Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neo Sans Arabic Medium"),
+    url("./assets/fonts/NeoSansArabicMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neo Sans Arabic Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neo Sans Arabic Bold"),
+    url("./assets/fonts/NeoSansArabicBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neo Sans Arabic Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neo Sans Arabic Black"),
+    url("./assets/fonts/NeoSansArabicBlack.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neo Sans Arabic Ultra";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neo Sans Arabic Ultra"),
+    url("./assets/fonts/NeoSansArabicUltra.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neo Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Neo Sans Medium"),
+    url("./assets/fonts/Neo_Sans_Medium.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #131722;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: inherit;
+  }
+}

@@ -1,0 +1,35 @@
+.SearchPage__container .title {
+  font-size: 1.2rem;
+}
+
+.SearchPage__container .Search__results {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 720px) {
+  .SearchPage__container .title {
+    font-size: 1.2rem;
+  }
+  .SearchPage__container .Search__results {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .SearchPage__container .title {
+    font-size: 1.2rem;
+  }
+  .SearchPage__container .Search__results {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=SearchPage.css.map */
