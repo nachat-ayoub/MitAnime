@@ -1,2 +1,8 @@
 # Local Netlify folder
 .netlify
+
+# Block Backend
+backend/
+
+# Block Frontend
+frontend/

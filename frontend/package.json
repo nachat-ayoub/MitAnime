@@ -22,6 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build && netlify deploy --dir build --prod",
     "test": "react-scripts test",
+    "dep": "git add . && git commit -m \"new commit\" && git push",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
