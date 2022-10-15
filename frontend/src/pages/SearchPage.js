@@ -18,7 +18,7 @@ const SearchPage = ({ Searched }) => {
     try {
       const url = process.env.REACT_APP_API_BASE_URL + "search/?s=" + Search;
       const { data } = await axios.get(url);
-      console.log(data);
+      // console.log(data);
       setData(data);
     } catch (err) {
       console.log(err);
@@ -28,9 +28,9 @@ const SearchPage = ({ Searched }) => {
   useEffect(() => {
     setData([]);
     setSearch(searchParams.get("s"));
-    console.log(Searched);
-    fetchData(Searched);
-  }, [Searched]);
+    // console.log(Searched);
+    fetchData(Searched || searchParams.get("s"));
+  }, [searchParams, Searched]);
 
   return (
     <div
@@ -62,7 +62,11 @@ const SearchPage = ({ Searched }) => {
       <div className="Search__results">
         {Data?.notFound ? (
           <div className="w-100 d-flex justify-content-center align-items-center">
-            <img src={NoContentFound} alt="No Content Found" />
+            <img
+              className="w-100"
+              src={NoContentFound}
+              alt="No Content Found"
+            />
           </div>
         ) : (
           Data?.data?.map((e, i) => {

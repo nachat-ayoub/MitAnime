@@ -97,13 +97,23 @@ const AnimePage = () => {
               </div>
             </div>
             <div className="infoBtns mt-3">
-              <a target="_blank" href={Data?.trailer} className="colored ">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={Data?.trailer}
+                className="colored "
+              >
                 <i className="fa-regular fa-circle-play ms-1"></i>
                 {/*  */}
                 العرض التشويقي
                 {/*  */}
               </a>
-              <a target="_blank" href={Data?.MAL} className="outlined">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={Data?.MAL}
+                className="outlined"
+              >
                 <i className="fa-solid fa-globe-asia ms-1"></i>
                 {/*  */}
                 صفحة الأنمي على موقع MAL

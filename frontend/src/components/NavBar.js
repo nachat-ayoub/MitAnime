@@ -89,6 +89,20 @@ const NavBar = ({ Searched, setSearched }) => {
             </ul>
           </div>
           <div className="navbar-buttons">
+            <Link
+              to="/report"
+              className="ms-3 d-flex justify-content-center align-items-center btn btn-danger rounded-pill"
+            >
+              <span
+                style={{ whiteSpace: "nowrap", fontSize: ".8rem" }}
+                className="font-ar ms-2"
+              >
+                التبليغ عن مشكلة
+              </span>
+              <div className="text-white">
+                <i className="fa-solid fa-triangle-exclamation"></i>
+              </div>
+            </Link>
             <div className="btn btnIcone">
               <i className="fa-solid fa-user"></i>
             </div>

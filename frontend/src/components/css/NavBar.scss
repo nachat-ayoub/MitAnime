@@ -230,6 +230,7 @@ nav {
             color: #000 !important;
           }
           .nav-link {
+            white-space: nowrap;
             color: rgb(56, 56, 56) !important;
             transition: all 0.4s ease-in-out;
           }
@@ -242,4 +243,10 @@ nav {
       margin-bottom: 0;
     }
   }
+}
+
+
+
+.font-ar {
+  font-family: $Ar_Medium;
 }

@@ -37,6 +37,7 @@
 
 .watch__page .scroll__episodes__section {
   text-align: right;
+  width: 90%;
 }
 
 .watch__page .scroll__episodes__section .scroll__heading {
@@ -83,6 +84,40 @@
 
 .watch__page .scroll__episodes__section .scroll__container::-webkit-scrollbar {
   display: none;
+}
+
+.watch__page .download_area {
+  list-style: none;
+}
+
+.watch__page .download_area .download_list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.watch__page .download_area .download_list .download_quality {
+  color: #fff;
+  font-family: "Neo Sans Arabic Regular";
+  font-size: 0.8rem;
+  background-color: #0a0d14;
+  padding: 10px 12px;
+  border-radius: 20px;
+}
+
+.watch__page .download_area .download_list .download_server {
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #adadad;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.watch__page .download_area .download_list .download_server a {
+  text-decoration: none;
+  color: #0a0d14;
+  font-family: "Neo Sans Arabic Regular";
+  font-size: 0.8rem;
 }
 
 .watch__page .comment__section {

@@ -82,3 +82,12 @@ body {
     max-width: inherit;
   }
 }
+.btnColored {
+  background-color: #009ec0;
+  cursor: pointer;
+  padding: 9px 18px;
+  border-radius: 25px;
+  font-family: "Neo Sans Arabic Bold";
+  font-size: 0.8rem;
+  border-radius: 25px;
+}

@@ -35,6 +35,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

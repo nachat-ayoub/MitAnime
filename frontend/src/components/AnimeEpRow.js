@@ -15,7 +15,7 @@ const AnimeEpRow = ({ data, image }) => {
     setData(data);
     if (Data !== null) {
       let filtred_data = data.filter((ep) => ep.ep_text.includes(SearchQuery));
-      console.log(filtred_data);
+      // console.log(filtred_data);
       setData(filtred_data);
     }
 

@@ -108,6 +108,7 @@
   text-align: center;
   font-size: 0.8rem;
   cursor: pointer;
+  direction: ltr;
 }
 
 .epCard .card_detailes .card_story {
