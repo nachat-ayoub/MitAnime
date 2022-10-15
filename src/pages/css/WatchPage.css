@@ -1,0 +1,139 @@
+.watch__page {
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.watch__page .watch__section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.04)), to(rgba(255, 255, 255, 0.04))), url("../../assets/images/background.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)), url("../../assets/images/background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.watch__page .watch__section ul {
+  list-style: none;
+}
+
+.watch__page .watch__section ul .server-btn {
+  background-color: #131722;
+  padding: 8px 12px;
+  font-size: 0.76rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 1px;
+}
+
+.watch__page .watch__section ul .server-btn.active {
+  background-color: #009ec0;
+}
+
+.watch__page .watch__section ul .server-btn:hover:not(.active) {
+  background-color: #0a0d14;
+}
+
+.watch__page .scroll__episodes__section {
+  text-align: right;
+  width: 90%;
+}
+
+.watch__page .scroll__episodes__section .scroll__heading {
+  background-color: #131722;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-family: "Neo Sans Arabic Regular";
+  font-size: 0.8rem;
+}
+
+.watch__page .scroll__episodes__section .scroll__container {
+  list-style: none;
+  width: 100%;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+.watch__page .scroll__episodes__section .scroll__container .ep_li {
+  width: inherit;
+  background-color: #1c2232;
+  padding: 7px 12px;
+  border-bottom: 1px solid #242b3e;
+  cursor: pointer;
+  font-family: "Neo Sans Arabic Regular";
+  font-size: 0.8rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.watch__page .scroll__episodes__section .scroll__container .ep_li .ep_link {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+}
+
+.watch__page .scroll__episodes__section .scroll__container .ep_li:hover .ep_link {
+  color: #009ec0;
+}
+
+.watch__page .scroll__episodes__section .scroll__container::-webkit-scrollbar {
+  display: none;
+}
+
+.watch__page .download_area {
+  list-style: none;
+}
+
+.watch__page .download_area .download_list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.watch__page .download_area .download_list .download_quality {
+  color: #fff;
+  font-family: "Neo Sans Arabic Regular";
+  font-size: 0.8rem;
+  background-color: #0a0d14;
+  padding: 10px 12px;
+  border-radius: 20px;
+}
+
+.watch__page .download_area .download_list .download_server {
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #adadad;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.watch__page .download_area .download_list .download_server a {
+  text-decoration: none;
+  color: #0a0d14;
+  font-family: "Neo Sans Arabic Regular";
+  font-size: 0.8rem;
+}
+
+.watch__page .comment__section {
+  background-color: #181d2b;
+}
+
+@media (max-width: 768px) {
+  .watch__page .watch__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .watch__page .watch__section .scroll__episodes__section {
+    width: calc(100% - 100px);
+    margin: 2px 0;
+  }
+}
+/*# sourceMappingURL=WatchPage.css.map */

@@ -1,0 +1,182 @@
+@import "../../assets/variables/index.scss";
+
+.card {
+  width: 10rem;
+  margin: 5px;
+  background-color: #1e2436;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.18);
+
+  .card_poster {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    background-color: #1e2436;
+
+    .status {
+      position: absolute;
+      background-color: #131722;
+      color: #fff;
+      top: 5px;
+      left: 5px;
+      width: fit-content;
+      height: fit-content;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-family: $Ar_Medium;
+      z-index: 10;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+      transition: all 0.4s ease-in-out;
+    }
+    .overlay {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+      z-index: 2;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    img {
+      width: 100%;
+      height: fit-content;
+      border-top-left-radius: 1px;
+      border-top-right-radius: 1px;
+      transform: scale(1.25);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .card_detailes {
+    position: relative;
+
+    .type {
+      position: absolute;
+      background-color: #ffaa00;
+      color: #fff;
+      top: -15px;
+      right: 5px;
+      width: fit-content;
+      height: fit-content;
+      padding: 3px 15px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-family: $Ar_Medium;
+      z-index: 10;
+    }
+
+    &:hover {
+      .card_story {
+        display: block;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+    .card_title {
+      font-weight: bold;
+      text-align: center;
+      direction: ltr;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+    .card_story {
+      user-select: none;
+      cursor: default;
+      strong {
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.8rem;
+        color: rgb(24, 24, 24);
+        font-family: $Ar_Bold;
+      }
+      p {
+        text-align: justify;
+        font-size: 0.6rem;
+        line-height: 1rem;
+        font-family: $Ar_Bold;
+        color: #2e2e2e;
+        margin: 0;
+        margin-top: 5px;
+      }
+
+      width: 18rem;
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      color: #000;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 11;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: calc(100% + 12px);
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 12px solid rgb(255, 255, 255);
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 595px) {
+  .card {
+    width: 100%;
+    .card_poster {
+      height: 285px;
+    }
+  }
+}
+@media (min-width: 595px) and (max-width: 600px) {
+  .card {
+    width: 100%;
+    .card_poster {
+      height: 345px;
+    }
+  }
+}
+@media (min-width: 600px) {
+  .card {
+    width: 100%;
+    .card_poster {
+      // height: 345px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 100%;
+    .card_poster {
+      height: 290px;
+    }
+  }
+}
+
+@media (min-width: 1199px) {
+  .card {
+    width: 100%;
+    .card_poster {
+      height: 230px;
+    }
+  }
+}

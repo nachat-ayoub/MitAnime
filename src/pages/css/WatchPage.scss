@@ -1,0 +1,127 @@
+@import "../../assets/variables/index.scss";
+
+.watch__page {
+  width: 100%;
+  height: min-content;
+  .watch__section {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.04)
+      ),
+      url("../../assets/images/background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ul {
+      list-style: none;
+      .server-btn {
+        background-color: #131722;
+        padding: 8px 12px;
+        font-size: 0.76rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        border-radius: 1px;
+        &.active {
+          background-color: #009ec0;
+        }
+        &:hover:not(.active) {
+          background-color: #0a0d14;
+        }
+      }
+    }
+  }
+
+  .scroll__episodes__section {
+    text-align: right;
+    width: 90%;
+    .scroll__heading {
+      background-color: #131722;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      font-family: $Ar_Regular;
+      font-size: 0.8rem;
+    }
+    .scroll__container {
+      list-style: none;
+      width: 100%;
+      min-height: 300px;
+      max-height: 400px;
+      overflow-y: scroll;
+      padding: 0;
+      margin: 0;
+      .ep_li {
+        width: inherit;
+        background-color: #1c2232;
+        padding: 7px 12px;
+        border-bottom: 1px solid #242b3e;
+        cursor: pointer;
+        font-family: $Ar_Regular;
+        font-size: 0.8rem;
+        transition: all 0.2s ease-in-out;
+        .ep_link {
+          transition: all 0.2s ease-in-out;
+          text-decoration: none;
+          color: #fff;
+        }
+        &:hover {
+          .ep_link {
+            color: #009ec0;
+          }
+        }
+      }
+    }
+    .scroll__container::-webkit-scrollbar {
+      display: none;
+    }
+    .ep__searchBox {
+    }
+  }
+
+  .download_area {
+    list-style: none;
+    .download_list {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+
+      .download_quality {
+        color: #fff;
+        font-family: $Ar_Regular;
+        font-size: 0.8rem;
+        background-color: #0a0d14;
+        padding: 10px 12px;
+        border-radius: 20px;
+      }
+      .download_server {
+        list-style: none;
+        background-color: #fff;
+        border: 1px solid #adadad;
+        padding: 5px 12px;
+        border-radius: 20px;
+        a {
+          text-decoration: none;
+          color: #0a0d14;
+          font-family: $Ar_Regular;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .comment__section {
+    background-color: #181d2b;
+  }
+}
+
+@media (max-width: 768px) {
+  .watch__page {
+    .watch__section {
+      flex-direction: column;
+      .scroll__episodes__section {
+        width: calc(100% - 100px);
+        margin: 2px 0;
+      }
+    }
+  }
+}
