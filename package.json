@@ -1,1 +1,20 @@
-{}
+{
+  "name": "mitanime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dep": "git add . && git commit -m \"new commit\" && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachat-ayoub/MitAnime.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachat-ayoub/MitAnime/issues"
+  },
+  "homepage": "https://github.com/nachat-ayoub/MitAnime#readme"
+}
