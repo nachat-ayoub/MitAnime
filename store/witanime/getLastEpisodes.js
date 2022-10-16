@@ -14,7 +14,7 @@ module.exports.getLastEpisodes = async (res) => {
     let category_title = $(
       `.page-content-container .main-widget .main-didget-head h3:contains("${animeSectionsIndex.last_episodes}")`
     );
-    const e = category_title.parent().parent().find(".anime-card-container");
+    const e = category_title.parent().parent().find(".episodes-card-container");
     category_title = $(category_title).text().trim();
 
     for (let i = 0; i < e.length; i++) {
