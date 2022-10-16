@@ -11,11 +11,12 @@ module.exports.getPopularAnimes = async (res) => {
 
     const data = [];
 
-    const e = $(
-      "body > div.page-content-container:nth-child(" +
-        animeSectionsIndex.popular_animes +
-        ") .anime-card-container"
+    let category_title = $(
+      `.page-content-container .main-widget .main-didget-head h3:contains("${animeSectionsIndex.popular_animes}")`
     );
+    const e = category_title.parent().parent().find(".anime-card-container");
+    category_title = $(category_title).text().trim();
+
     for (let i = 0; i < e.length; i++) {
       const anime_title = $(e[i]).find(".anime-card-title h3").first().text();
 
@@ -84,11 +85,7 @@ module.exports.getPopularAnimes = async (res) => {
     }
     return {
       isEp: false,
-      category_title: $(
-        "body > div.page-content-container:nth-child(" +
-          animeSectionsIndex.popular_animes +
-          ") .main-didget-head h3"
-      ).text(),
+      category_title,
       data,
     };
   } catch (error) {

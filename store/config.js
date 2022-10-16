@@ -3,7 +3,7 @@ const cheerio = require("cheerio");
 
 // Site Config:
 const config = {
-  host: "anime4up.art",
+  host: process.env.BASE_SITE_URL.split("/").at(-1) /* ?? "anime4up.vip" */,
   headers: {
     "User-Agent":
       "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36",
@@ -51,8 +51,8 @@ const getAnimeImagesUrl = async (slug) => {
         folder: "anime",
       });
 
-      console.log("\n\nanime_image: ", anime_image_url);
-      console.log("ep_image: ", ep_image_url, "\n\n");
+      console.log("\nanime_image: ", anime_image_url);
+      console.log("ep_image: ", ep_image_url, "\n");
 
       const data = {
         anime_image: anime_image.url,
@@ -79,11 +79,11 @@ const getSliderImage = async (image) => {
 };
 
 const animeSectionsIndex = {
-  pinned_animes: 4,
-  pinned_episodes: 8,
-  popular_animes: 10,
-  last_episodes: 12,
-  last_animes: 14,
+  pinned_animes: "الأنميات المثبتة",
+  pinned_episodes: "حلقات الأنمي المثبتة",
+  popular_animes: "أكثر أنميات الموسم مشاهدة",
+  last_episodes: "آخر الحلقات المضافة",
+  last_animes: "آخر الأنميات المضافة",
 };
 
 module.exports = {

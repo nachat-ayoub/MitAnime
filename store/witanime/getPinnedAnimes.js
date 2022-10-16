@@ -11,11 +11,11 @@ module.exports.getPinnedAnimes = async (res) => {
 
     const data = [];
 
-    const e = $(
-      "body > div.page-content-container:nth-child(" +
-        animeSectionsIndex.pinned_animes +
-        ") .anime-card-container"
+    let category_title = $(
+      `.page-content-container .main-widget .main-didget-head h3:contains("${animeSectionsIndex.pinned_animes}")`
     );
+    const e = category_title.parent().parent().find(".anime-card-container");
+    category_title = $(category_title).text().trim();
 
     for (let i = 0; i < e.length; i++) {
       const anime_title = $(e[i]).find(".anime-card-title h3").first().text();
@@ -87,9 +87,7 @@ module.exports.getPinnedAnimes = async (res) => {
     // console.log("\n\n\n", data, "\n\n", data.length, "\n\n\n");
     return {
       isEp: false,
-      category_title: $(
-        `body > div.page-content-container:nth-child(${animeSectionsIndex.pinned_animes}) .main-didget-head h3`
-      ).text(),
+      category_title,
       data,
     };
   } catch (error) {
