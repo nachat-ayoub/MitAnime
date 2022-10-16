@@ -1,17 +1,17 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 
+// Site Url:
+const site = String(process.env.BASE_SITE_URL);
+
 // Site Config:
 const config = {
-  host: process.env.BASE_SITE_URL.split("/").at(-1) /* ?? "anime4up.vip" */,
+  host: site?.split("/")?.at(-1) ?? "anime4up.vip",
   headers: {
     "User-Agent":
       "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36",
   },
 };
-
-// Site Url:
-const site = String(process.env.BASE_SITE_URL);
 
 // Cloudinary Config :
 
