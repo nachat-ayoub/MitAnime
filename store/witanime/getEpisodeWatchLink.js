@@ -38,7 +38,7 @@ module.exports.getEpisodeWatchLink = async (slug) => {
 
         const { data } = await axios({
           method: "post",
-          encodeURI(url),
+          url: encodeURI(url),
           data: bodyFormData,
           headers: { "Content-Type": "multipart/form-data" },
         });
