@@ -13,7 +13,7 @@ module.exports.getEpisodeWatchLink = async (slug) => {
 
     const download_servers = [];
 
-    $(".tab-content .quality-list")
+    $(".panel-body .tab-content .quality-list")
       .toArray()
       .map((e) => {
         const download_server_data = {
@@ -61,16 +61,33 @@ module.exports.getEpisodeWatchLink = async (slug) => {
       }
     }
 
+    function getWatchingServers_2() {
+      return {
+        active: {
+          name: $("#episode-servers li:nth-child(1) a").text(),
+          link: $("#episode-servers li:nth-child(1) a").attr("data-ep-url"),
+        },
+        all: $("#episode-servers li a")
+          .toArray()
+          .map((e) => {
+            return { name: $(e).text(), link: $(e).attr("data-ep-url") };
+          }),
+      };
+    }
+
     const data = {
       animeLink: {
         title: $(".anime-page-link a").first().text(),
         slug: $(".anime-page-link a").first().attr("href").split("/")[4],
       },
       download_servers,
+      // old way 1 :
       servers: await getWatchingServers(
         $(".watchForm form").attr("action"),
         $(".watchForm form input[name='wl']").val()
       ),
+      // New Way 2 :
+      // servers: await getWatchingServers_2(),
 
       ep_list: {
         active: {
