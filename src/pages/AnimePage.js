@@ -30,7 +30,7 @@ const AnimePage = () => {
   }, [slug]);
 
   return (
-    <div style={{ flex: 1 }} className="d-flex flex-column">
+    <div style={{ flex: 1 }} className="d-flex flex-column animePage">
       <Helmet>
         <title>
           {`
