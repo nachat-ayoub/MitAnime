@@ -1,0 +1,9 @@
+.loading-spinner {
+	font-size: 3.5rem;
+	animation: spin 1s infinite forwards;
+}
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
