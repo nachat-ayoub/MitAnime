@@ -1,10 +1,8 @@
 .epCard {
   margin: 5px;
   background-color: #1e2436;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.18);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.18);
 }
-
 .epCard .card_poster {
   height: 160px;
   border-top-left-radius: 1px;
@@ -14,7 +12,6 @@
   width: 100%;
   background-color: #1e2436;
 }
-
 .epCard .card_poster::before {
   content: "";
   position: absolute;
@@ -26,24 +23,18 @@
   background: linear-gradient(rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 100%);
   z-index: 1;
 }
-
 .epCard .card_poster .cardText {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   font-family: "Neo Sans Arabic Medium";
   z-index: 2;
 }
-
 .epCard .card_poster:hover .card_img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
   transition: all 0.4s ease-in-out;
 }
-
 .epCard .card_poster .overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
@@ -54,30 +45,23 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   z-index: 2;
   cursor: pointer;
 }
-
 .epCard .card_poster .overlay:hover {
   opacity: 1;
 }
-
 .epCard .card_poster .card_img {
   width: 100%;
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-  -webkit-transition: all 0.4s ease-in-out;
+  transform: scale(1.25);
   transition: all 0.4s ease-in-out;
 }
-
 .epCard .card_detailes {
   position: relative;
 }
-
 .epCard .card_detailes .type {
   position: absolute;
   background-color: #ffaa00;
@@ -96,13 +80,10 @@
   font-family: "Neo Sans Arabic Medium";
   z-index: 10;
 }
-
 .epCard .card_detailes:hover .card_story {
   display: block;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-
 .epCard .card_detailes .card_title {
   font-weight: bold;
   text-align: center;
@@ -110,7 +91,6 @@
   cursor: pointer;
   direction: ltr;
 }
-
 .epCard .card_detailes .card_story {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -126,19 +106,16 @@
   border-radius: 5px;
   z-index: 11;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: calc(100% + 12px);
 }
-
 .epCard .card_detailes .card_story strong {
   font-weight: bold;
   text-align: center;
   font-size: 0.8rem;
-  color: #181818;
+  color: rgb(24, 24, 24);
   font-family: "Neo Sans Arabic Bold";
 }
-
 .epCard .card_detailes .card_story p {
   text-align: justify;
   font-size: 0.6rem;
@@ -148,7 +125,6 @@
   margin: 0;
   margin-top: 5px;
 }
-
 .epCard .card_detailes .card_story:before {
   content: "";
   position: absolute;
@@ -156,11 +132,10 @@
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 12px solid white;
+  border-top: 12px solid rgb(255, 255, 255);
   bottom: -12px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media (min-width: 400px) {
@@ -168,16 +143,13 @@
     height: 200px;
   }
 }
-
 @media (min-width: 576px) {
   .epCard .card_poster {
     height: 250px;
   }
 }
-
 @media (min-width: 768px) {
   .epCard .card_poster {
     height: 140px;
   }
-}
-/*# sourceMappingURL=EpisodeCard.css.map */
+}/*# sourceMappingURL=EpisodeCard.css.map */

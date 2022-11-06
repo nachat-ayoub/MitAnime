@@ -2,27 +2,22 @@
   background-color: #1e2436;
   color: #fff;
 }
-
 .page .topSlider {
   position: relative;
 }
-
 .page .topSlider .swiper-pagination {
   bottom: 20px;
 }
-
 .page .topSlider .swiper-pagination .swiper-pagination-bullet {
   width: 9px;
   height: 9px;
   background-color: #fff;
   opacity: 0.8;
 }
-
 .page .topSlider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
   background-color: #009ec0;
 }
-
 .page .slide-test {
   width: 90vw;
 }
@@ -43,22 +38,18 @@
     height: 200px;
   }
 }
-
 @media (max-width: 992px) {
   .imgSlider {
     height: 260px;
   }
 }
-
 @media (min-width: 992px) {
   .imgSlider {
     height: 300px;
   }
 }
-
 @media (min-width: 992px) {
   .imgSlider {
     height: 300px;
   }
-}
-/*# sourceMappingURL=Home.css.map */
+}/*# sourceMappingURL=Home.css.map */

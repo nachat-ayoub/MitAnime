@@ -1,34 +1,17 @@
 .AnimeEpRow__Wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   padding: 20px 0;
 }
-
 .AnimeEpRow__Wrapper .btn__Wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .AnimeEpRow__Wrapper .btn__Wrapper .btnColored {
   background-color: #009ec0;
   cursor: pointer;
@@ -38,7 +21,6 @@
   font-size: 0.8rem;
   border-radius: 25px;
 }
-
 .AnimeEpRow__Wrapper .searchBtnBlack {
   background-color: #1e2436;
   font-family: "Neo Sans Arabic Regular";
@@ -49,59 +31,38 @@
   padding: 0 10px;
   font-size: 14px;
   color: #fff;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
-.AnimeEpRow__Wrapper .searchBtnBlack::-webkit-input-placeholder {
+.AnimeEpRow__Wrapper .searchBtnBlack::-moz-placeholder {
   color: #fff;
 }
-
 .AnimeEpRow__Wrapper .searchBtnBlack:-ms-input-placeholder {
   color: #fff;
 }
-
-.AnimeEpRow__Wrapper .searchBtnBlack::-ms-input-placeholder {
-  color: #fff;
-}
-
 .AnimeEpRow__Wrapper .searchBtnBlack::placeholder {
   color: #fff;
 }
-
 .AnimeEpRow__Wrapper .searchBtnBlack:focus {
   color: #fff;
-  -webkit-box-shadow: 0 0 5px 1px rgba(52, 62, 88, 0.315);
-          box-shadow: 0 0 5px 1px rgba(52, 62, 88, 0.315);
-  border: 1px solid #343e58;
+  box-shadow: 0 0 5px 1px rgba(52, 62, 88, 0.315);
+  border: 1px solid rgb(52, 62, 88);
 }
-
-.AnimeEpRow__Wrapper .searchBtnBlack:focus::-webkit-input-placeholder {
+.AnimeEpRow__Wrapper .searchBtnBlack:focus::-moz-placeholder {
   color: #555;
 }
-
 .AnimeEpRow__Wrapper .searchBtnBlack:focus:-ms-input-placeholder {
   color: #555;
 }
-
-.AnimeEpRow__Wrapper .searchBtnBlack:focus::-ms-input-placeholder {
-  color: #555;
-}
-
 .AnimeEpRow__Wrapper .searchBtnBlack:focus::placeholder {
   color: #555;
 }
-
 .AnimeEpRow__Wrapper .epsContainer {
   margin-top: 20px;
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 7px;
 }
-
 .AnimeEpRow__Wrapper .epsContainer .ep {
   height: 175px;
   background-size: cover;
@@ -111,7 +72,6 @@
   overflow: hidden;
   cursor: pointer;
 }
-
 .AnimeEpRow__Wrapper .epsContainer .ep .overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
@@ -122,32 +82,24 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   z-index: 2;
   cursor: pointer;
 }
-
 .AnimeEpRow__Wrapper .epsContainer .ep .overlay:hover {
   opacity: 1;
 }
-
 .AnimeEpRow__Wrapper .epsContainer .ep img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all 0.4s ease-in-out;
+  transform: scale(1.2);
   transition: all 0.4s ease-in-out;
 }
-
 .AnimeEpRow__Wrapper .epsContainer .ep:hover img {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
-
 .AnimeEpRow__Wrapper .epsContainer .ep .epTitle {
   font-size: 0.9rem;
   position: absolute;
@@ -158,30 +110,20 @@
   width: 100%;
   height: 60px;
   padding-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
 @media (max-width: 990px) {
   .AnimeEpRow__Wrapper .epsContainer {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 768px) {
   .AnimeEpRow__Wrapper .epsContainer {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .AnimeEpRow__Wrapper .epsContainer .ep {
     height: 400px;
@@ -189,5 +131,4 @@
   .AnimeEpRow__Wrapper .epsContainer .ep .epTitle {
     font-size: 1rem;
   }
-}
-/*# sourceMappingURL=AnimeEpRow.css.map */
+}/*# sourceMappingURL=AnimeEpRow.css.map */

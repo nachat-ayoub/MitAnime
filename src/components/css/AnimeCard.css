@@ -2,10 +2,8 @@
   width: 10rem;
   margin: 5px;
   background-color: #1e2436;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.18);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.18);
 }
-
 .card .card_poster {
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
@@ -14,7 +12,6 @@
   height: 220px;
   background-color: #1e2436;
 }
-
 .card .card_poster .status {
   position: absolute;
   background-color: #131722;
@@ -33,14 +30,10 @@
   font-family: "Neo Sans Arabic Medium";
   z-index: 10;
 }
-
 .card .card_poster:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
   transition: all 0.4s ease-in-out;
 }
-
 .card .card_poster .overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
@@ -51,16 +44,13 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   z-index: 2;
   cursor: pointer;
 }
-
 .card .card_poster .overlay:hover {
   opacity: 1;
 }
-
 .card .card_poster img {
   width: 100%;
   height: -webkit-fit-content;
@@ -68,16 +58,12 @@
   height: fit-content;
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
-  -webkit-transition: all 0.4s ease-in-out;
+  transform: scale(1.25);
   transition: all 0.4s ease-in-out;
 }
-
 .card .card_detailes {
   position: relative;
 }
-
 .card .card_detailes .type {
   position: absolute;
   background-color: #ffaa00;
@@ -96,13 +82,10 @@
   font-family: "Neo Sans Arabic Medium";
   z-index: 10;
 }
-
 .card .card_detailes:hover .card_story {
   display: block;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-
 .card .card_detailes .card_title {
   font-weight: bold;
   text-align: center;
@@ -110,7 +93,6 @@
   font-size: 0.8rem;
   cursor: pointer;
 }
-
 .card .card_detailes .card_story {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -126,19 +108,16 @@
   border-radius: 5px;
   z-index: 11;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: calc(100% + 12px);
 }
-
 .card .card_detailes .card_story strong {
   font-weight: bold;
   text-align: center;
   font-size: 0.8rem;
-  color: #181818;
+  color: rgb(24, 24, 24);
   font-family: "Neo Sans Arabic Bold";
 }
-
 .card .card_detailes .card_story p {
   text-align: justify;
   font-size: 0.6rem;
@@ -148,7 +127,6 @@
   margin: 0;
   margin-top: 5px;
 }
-
 .card .card_detailes .card_story:before {
   content: "";
   position: absolute;
@@ -156,11 +134,10 @@
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 12px solid white;
+  border-top: 12px solid rgb(255, 255, 255);
   bottom: -12px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media (max-width: 595px) {
@@ -171,7 +148,6 @@
     height: 285px;
   }
 }
-
 @media (min-width: 595px) and (max-width: 600px) {
   .card {
     width: 100%;
@@ -180,13 +156,11 @@
     height: 345px;
   }
 }
-
 @media (min-width: 600px) {
   .card {
     width: 100%;
   }
 }
-
 @media (min-width: 992px) {
   .card {
     width: 100%;
@@ -195,7 +169,6 @@
     height: 290px;
   }
 }
-
 @media (min-width: 1199px) {
   .card {
     width: 100%;
@@ -203,5 +176,4 @@
   .card .card_poster {
     height: 230px;
   }
-}
-/*# sourceMappingURL=AnimeCard.css.map */
+}/*# sourceMappingURL=AnimeCard.css.map */

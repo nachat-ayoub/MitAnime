@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import AnimeEpRow from "../components/AnimeEpRow";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 import "./css/AnimePage.css";
 
@@ -29,12 +30,7 @@ const AnimePage = () => {
   }, [slug]);
 
   return (
-    <div
-      style={{
-        minHeight: "calc(100vh - 100px)",
-      }}
-      className="animePage"
-    >
+    <div style={{ flex: 1 }} className="d-flex flex-column">
       <Helmet>
         <title>
           {`
@@ -64,68 +60,74 @@ const AnimePage = () => {
         <meta property="og:image" content="/logo512.png" />
       </Helmet>
 
-      <section className="animeInfo w-100 py-5">
-        <div
-          dir="rtl"
-          className="sectionWrapper container d-flex justify-content-end align-items-start w-100 h-fit-content"
-        >
-          <div className="animePoster mx-3">
-            <img src={Data?.images.anime_image} alt={Data?.title} />
-          </div>
-          <div className="container-fluid animeDetails ">
-            <h1 className="animeTitle text-white">{Data?.title}</h1>
-            <div className="animeGenres">
-              {Data?.genre.map((e, i) => {
-                return (
-                  <span key={i} className="genreBtn">
-                    {e.text}
-                  </span>
-                );
-              })}
-            </div>
-            <p className="animeStory">{Data?.story}</p>
-            <div className="row w-100 ">
-              <div className="col-md-6 col-sm-12">
-                النوع:
-                {/*  */ " "}
-                <span className="marked">{Data?.anime_type.text}</span>
+      {!Data ? (
+        <LoadingSpinner className="" />
+      ) : (
+        <>
+          <section className="animeInfo w-100 py-5">
+            <div
+              dir="rtl"
+              className="sectionWrapper container d-flex justify-content-end align-items-start w-100 h-fit-content"
+            >
+              <div className="animePoster mx-3">
+                <img src={Data?.images.anime_image} alt={Data?.title} />
               </div>
-              <div className="col-md-6 col-sm-12">
-                حالة الأنمي:
-                {/*  */ " "}
-                <span className="marked">{Data?.anime_status.text}</span>
+              <div className="container-fluid animeDetails ">
+                <h1 className="animeTitle text-white">{Data?.title}</h1>
+                <div className="animeGenres">
+                  {Data?.genre.map((e, i) => {
+                    return (
+                      <span key={i} className="genreBtn">
+                        {e.text}
+                      </span>
+                    );
+                  })}
+                </div>
+                <p className="animeStory">{Data?.story}</p>
+                <div className="row w-100 ">
+                  <div className="col-md-6 col-sm-12">
+                    النوع:
+                    {/*  */ " "}
+                    <span className="marked">{Data?.anime_type.text}</span>
+                  </div>
+                  <div className="col-md-6 col-sm-12">
+                    حالة الأنمي:
+                    {/*  */ " "}
+                    <span className="marked">{Data?.anime_status.text}</span>
+                  </div>
+                </div>
+                <div className="infoBtns mt-3">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={Data?.trailer}
+                    className="colored "
+                  >
+                    <i className="fa-regular fa-circle-play ms-1"></i>
+                    {/*  */}
+                    العرض التشويقي
+                    {/*  */}
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={Data?.MAL}
+                    className="outlined"
+                  >
+                    <i className="fa-solid fa-globe-asia ms-1"></i>
+                    {/*  */}
+                    صفحة الأنمي على موقع MAL
+                    {/*  */}
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="infoBtns mt-3">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={Data?.trailer}
-                className="colored "
-              >
-                <i className="fa-regular fa-circle-play ms-1"></i>
-                {/*  */}
-                العرض التشويقي
-                {/*  */}
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={Data?.MAL}
-                className="outlined"
-              >
-                <i className="fa-solid fa-globe-asia ms-1"></i>
-                {/*  */}
-                صفحة الأنمي على موقع MAL
-                {/*  */}
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="w-100">
-        <AnimeEpRow data={Data?.episodes} image={Data?.images.ep_image} />
-      </section>
+          </section>
+          <section className="w-100">
+            <AnimeEpRow data={Data?.episodes} image={Data?.images.ep_image} />
+          </section>
+        </>
+      )}
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./css/Footer.css";
+
 const Footer = () => {
   return (
     <footer dir="rtl">
@@ -17,7 +18,10 @@ const Footer = () => {
       </div>
       <div className="links ">
         <a href="#dmca"> DMCA </a> | <a href="#contact-us"> Contact Us </a> |
-        <a href="#news"> News </a> | <a href="#lucodeia"> Lucodeia </a>
+        <a href="#news"> News </a> |{" "}
+        <a target="_blank" href="https://github.com/nachat-ayoub">
+          Developer
+        </a>
       </div>
     </footer>
   );

@@ -1,11 +1,9 @@
 .Row_wrapper {
   position: relative;
 }
-
 .Row_wrapper:first-child {
   padding-top: 30px !important;
 }
-
 .Row_wrapper .category_title {
   font-family: "Neo Sans Arabic Bold", Arial, sans-serif;
   font-size: 0.8rem;
@@ -18,7 +16,6 @@
   padding: 9px 23px;
   border-radius: 25px;
 }
-
 .Row_wrapper .category_title.more {
   background-color: transparent;
   border: #029dbc 2px solid;
@@ -26,15 +23,11 @@
   border-radius: 1px;
   cursor: pointer;
 }
-
 .Row_wrapper .episodes {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 0px;
 }
-
 .Row_wrapper .triangle {
   position: absolute;
   width: 0;
@@ -43,8 +36,7 @@
   border-right: 55px solid transparent;
   bottom: -40px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 2;
 }
 
@@ -55,27 +47,19 @@
     position: relative;
   }
   .Row_wrapper .titlesSection {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    justify-content: center !important;
+    flex-direction: column-reverse !important;
   }
   .Row_wrapper .titlesSection .category_title.more {
     width: 100%;
     text-align: center;
   }
   .Row_wrapper .episodes {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 0px;
   }
 }
-
 @media (min-width: 768px) {
   .Row_wrapper {
     padding-top: 60px !important;
@@ -83,13 +67,8 @@
     position: relative;
   }
   .Row_wrapper .titlesSection {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
   }
   .Row_wrapper .titlesSection .category_title.more {
     width: -webkit-fit-content;
@@ -98,15 +77,12 @@
     text-align: center;
   }
   .Row_wrapper .episodes {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0px;
     width: 100% !important;
   }
 }
-
 @media (min-width: 992px) {
   .Row_wrapper {
     padding-top: 60px !important;
@@ -114,13 +90,8 @@
     position: relative;
   }
   .Row_wrapper .titlesSection {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
   }
   .Row_wrapper .titlesSection .category_title.more {
     width: -webkit-fit-content;
@@ -129,14 +100,11 @@
     text-align: center;
   }
   .Row_wrapper .episodes {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0px;
   }
 }
-
 @media (min-width: 1200px) {
   .Row_wrapper {
     padding-top: 60px !important;
@@ -144,13 +112,8 @@
     position: relative;
   }
   .Row_wrapper .titlesSection {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
   }
   .Row_wrapper .titlesSection .category_title.more {
     width: -webkit-fit-content;
@@ -159,14 +122,11 @@
     text-align: center;
   }
   .Row_wrapper .episodes {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0px;
   }
 }
-
 @media (min-width: 1400px) {
   .Row_wrapper {
     padding-top: 60px !important;
@@ -174,13 +134,8 @@
     position: relative;
   }
   .Row_wrapper .titlesSection {
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
   }
   .Row_wrapper .titlesSection .category_title.more {
     width: -webkit-fit-content;
@@ -189,11 +144,8 @@
     text-align: center;
   }
   .Row_wrapper .episodes {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0px;
   }
-}
-/*# sourceMappingURL=ContentRow.css.map */
+}/*# sourceMappingURL=ContentRow.css.map */
