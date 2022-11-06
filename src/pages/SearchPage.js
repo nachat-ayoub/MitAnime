@@ -65,11 +65,11 @@ const SearchPage = ({ Searched }) => {
       {!Data ? (
         <LoadingSpinner />
       ) : (
-        <div className="Search__results">
+        <div className="Search__results d-flex justify-content-center align-items-center">
           {Data?.notFound ? (
             <div className="w-100 d-flex justify-content-center align-items-center">
               <img
-                className="w-100"
+                className="w-75"
                 src={NoContentFound}
                 alt="No Content Found"
               />
