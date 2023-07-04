@@ -5,7 +5,6 @@ import './css/ContentRow.css';
 import EpisodeCard from './EpisodeCard';
 
 const ContentRow = ({ data, title, isEp, hideTriangle }) => {
-  console.log(title, hideTriangle);
   return (
     <>
       {data.length > 0 && (
