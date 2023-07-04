@@ -9,7 +9,7 @@
   border-top-right-radius: 1px;
   overflow: hidden;
   position: relative;
-  min-height: 20rem;
+  min-height: 17rem;
   height: 220px;
   background-color: #1e2436;
 }
@@ -54,10 +54,11 @@
 }
 .card .card_poster img {
   width: 100%;
-  min-height: 18rem;
+  height: 100%;
+  /*
   height: -webkit-fit-content;
   height: -moz-fit-content;
-  height: fit-content;
+  height: fit-content; */
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
   transform: scale(1.25);
