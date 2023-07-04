@@ -16,7 +16,7 @@ mongoose
 app.use(
   // cors()
   cors({
-    origin: ["https://mitanime.netlify.app"],
+          origin: ["http://localhost:3000", "https://mitanime.netlify.app"],
     methods: "GET",
   })
 );
