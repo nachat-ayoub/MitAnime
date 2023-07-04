@@ -54,6 +54,7 @@
 }
 .epCard .card_poster .card_img {
   width: 100%;
+  object-fit: cover;
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
   transform: scale(1.25);
