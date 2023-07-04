@@ -104,7 +104,7 @@ const Home = () => {
                       key={k}
                     />
                   );
-                }
+                } else return <></>;
               })}
           </div>
         </>

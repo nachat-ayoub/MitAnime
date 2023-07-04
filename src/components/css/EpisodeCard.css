@@ -13,7 +13,7 @@
   background-color: #1e2436;
 }
 .epCard .card_poster::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -28,7 +28,7 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Neo Sans Arabic Medium";
+  font-family: 'Neo Sans Arabic Medium';
   z-index: 2;
 }
 .epCard .card_poster:hover .card_img {
@@ -77,7 +77,7 @@
   padding: 3px 15px;
   border-radius: 10px;
   font-size: 12px;
-  font-family: "Neo Sans Arabic Medium";
+  font-family: 'Neo Sans Arabic Medium';
   z-index: 10;
 }
 .epCard .card_detailes:hover .card_story {
@@ -93,9 +93,9 @@
 }
 .epCard .card_detailes .card_story {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: default;
   width: 18rem;
   display: none;
@@ -114,19 +114,19 @@
   text-align: center;
   font-size: 0.8rem;
   color: rgb(24, 24, 24);
-  font-family: "Neo Sans Arabic Bold";
+  font-family: 'Neo Sans Arabic Bold';
 }
 .epCard .card_detailes .card_story p {
   text-align: justify;
   font-size: 0.6rem;
   line-height: 1rem;
-  font-family: "Neo Sans Arabic Bold";
+  font-family: 'Neo Sans Arabic Bold';
   color: #2e2e2e;
   margin: 0;
   margin-top: 5px;
 }
 .epCard .card_detailes .card_story:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -152,4 +152,4 @@
   .epCard .card_poster {
     height: 140px;
   }
-}/*# sourceMappingURL=EpisodeCard.css.map */
+} /*# sourceMappingURL=EpisodeCard.css.map */

@@ -4,6 +4,7 @@
 .SearchPage__container .Search__results {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  place-items: center;
 }
 
 @media (max-width: 720px) {
@@ -23,4 +24,4 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-}/*# sourceMappingURL=SearchPage.css.map */
+} /*# sourceMappingURL=SearchPage.css.map */

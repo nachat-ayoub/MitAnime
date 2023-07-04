@@ -9,6 +9,7 @@
   border-top-right-radius: 1px;
   overflow: hidden;
   position: relative;
+  min-height: 20rem;
   height: 220px;
   background-color: #1e2436;
 }
@@ -27,7 +28,7 @@
   padding: 5px 10px;
   border-radius: 10px;
   font-size: 12px;
-  font-family: "Neo Sans Arabic Medium";
+  font-family: 'Neo Sans Arabic Medium';
   z-index: 10;
 }
 .card .card_poster:hover img {
@@ -53,6 +54,7 @@
 }
 .card .card_poster img {
   width: 100%;
+  min-height: 18rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -79,7 +81,7 @@
   padding: 3px 15px;
   border-radius: 10px;
   font-size: 12px;
-  font-family: "Neo Sans Arabic Medium";
+  font-family: 'Neo Sans Arabic Medium';
   z-index: 10;
 }
 .card .card_detailes:hover .card_story {
@@ -95,9 +97,9 @@
 }
 .card .card_detailes .card_story {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: default;
   width: 18rem;
   display: none;
@@ -116,19 +118,19 @@
   text-align: center;
   font-size: 0.8rem;
   color: rgb(24, 24, 24);
-  font-family: "Neo Sans Arabic Bold";
+  font-family: 'Neo Sans Arabic Bold';
 }
 .card .card_detailes .card_story p {
   text-align: justify;
   font-size: 0.6rem;
   line-height: 1rem;
-  font-family: "Neo Sans Arabic Bold";
+  font-family: 'Neo Sans Arabic Bold';
   color: #2e2e2e;
   margin: 0;
   margin-top: 5px;
 }
 .card .card_detailes .card_story:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -176,4 +178,4 @@
   .card .card_poster {
     height: 230px;
   }
-}/*# sourceMappingURL=AnimeCard.css.map */
+} /*# sourceMappingURL=AnimeCard.css.map */
