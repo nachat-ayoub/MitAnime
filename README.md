@@ -8,5 +8,3 @@ MitAnime is an anime website that provides Arabic-translated anime content free 
 - Sass (Styling)
 - Web Scraping
 - Cloudinary
-
-...
