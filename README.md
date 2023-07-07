@@ -7,4 +7,4 @@ MitAnime is an anime website that provides Arabic-translated anime content free 
 - MERN Stack (MongoDB, Express.js, React.js, Node.js)
 - Sass (Styling)
 - Web Scraping
-- loudinary
+- Cloudinary
